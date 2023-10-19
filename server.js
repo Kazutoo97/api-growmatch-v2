@@ -43,6 +43,9 @@ app.use(
 //**All Routes */
 app.use("/api/v1/auth/", usersRoutes);
 app.use("/api/v1/", forgotPasswordRoutes);
+app.use("/", (req, res) => {
+  res.send("HI GROWMATCH");
+});
 
 //**Handle Error Middleware */
 app.use(ErrorHandler);
