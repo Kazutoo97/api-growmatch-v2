@@ -30,7 +30,7 @@ GET http://localhost:8000/api/v1/auth/profile
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1ODNhNTJlMjM0ZGU5MDVjMWY5YWMiLCJpYXQiOjE2OTY5NjEwNzgsImV4cCI6MTY5NzA0NzQ3OH0.gJk93uQxm46XucU3dM7NdUfAY2eRtmIdceqjimVNGAo
 
 ###
-PUT https://maroon-basket-clam-sock.cyclic.app/api/v1/forgot-password
+PUT http://localhost:3000/api/v1/forgot-password
 Content-Type: application/json
 
 {
