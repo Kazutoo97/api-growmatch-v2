@@ -1,0 +1,52 @@
+POST http://localhost:8000/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Muhammad",
+  "lastName": "Zainuddin",
+  "userName": "@Kazutoo97",
+  "email": "muhammadzainuddin280616@gmail.com",
+  "password": "@Akulupa21", 
+  "dob": "1997-08-12",
+  "interest": "Learning"
+}
+
+###
+POST http://localhost:8000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "userName": "@Kazutoo97",
+  "password": "@Passwordbaru12"
+
+}
+
+####
+DELETE http://localhost:8000/api/v1/auth/logout
+
+
+###
+GET http://localhost:8000/api/v1/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1ODNhNTJlMjM0ZGU5MDVjMWY5YWMiLCJpYXQiOjE2OTY5NjEwNzgsImV4cCI6MTY5NzA0NzQ3OH0.gJk93uQxm46XucU3dM7NdUfAY2eRtmIdceqjimVNGAo
+
+###
+PUT http://localhost:8000/api/v1/forgot-password
+Content-Type: application/json
+
+{
+  "email": "muhammadzainuddin280616@gmail.com"
+}
+
+
+
+####
+PUT http://localhost:8000/api/v1/reset-password
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1ODNhNTJlMjM0ZGU5MDVjMWY5YWMiLCJpYXQiOjE2OTc2NDc5NDd9.7L1q6nIjnLpUj6P1YSnMfDiXyCZnYX-8WHwi3cJkSBc",
+  "password": "@Passwordbaru12"
+}
+
+
+
