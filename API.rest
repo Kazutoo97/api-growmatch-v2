@@ -30,11 +30,11 @@ GET http://localhost:8000/api/v1/auth/profile
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1ODNhNTJlMjM0ZGU5MDVjMWY5YWMiLCJpYXQiOjE2OTY5NjEwNzgsImV4cCI6MTY5NzA0NzQ3OH0.gJk93uQxm46XucU3dM7NdUfAY2eRtmIdceqjimVNGAo
 
 ###
-PUT http://localhost:3000/api/v1/forgot-password
+PUT http://localhost:8000/api/v1/forgot-password
 Content-Type: application/json
 
 {
-  "email": "muhammadzainuddin280616@gmail.com"
+  "email": "muhammadzainuddin1997@gmail.com"
 }
 
 
