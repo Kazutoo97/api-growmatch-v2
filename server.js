@@ -12,7 +12,7 @@ import forgotPasswordRoutes from "./routes/forgotPasswordRoutes.js";
 dotenv.config();
 const PORT = process.env.PORT || 3000;
 const app = express();
-dbConn();
+const connectDB = dbConn();
 
 if (process.env.NODE_ENV !== "production") {
   app.use(morgan("dev")); // <-- middleware morgan
@@ -50,6 +50,8 @@ app.use("/", (req, res) => {
 //**Handle Error Middleware */
 app.use(ErrorHandler);
 
-app.listen(PORT, () => {
-  console.log(`server listening on port ${PORT}`);
+connectDB.then(() => {
+  app.listen(PORT, () => {
+    console.log(`server listening on port ${PORT}`);
+  });
 });
