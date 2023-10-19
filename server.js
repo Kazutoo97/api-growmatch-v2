@@ -10,7 +10,7 @@ import usersRoutes from "./routes/userRoutes.js";
 import forgotPasswordRoutes from "./routes/forgotPasswordRoutes.js";
 
 dotenv.config();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 dbConn();
 
